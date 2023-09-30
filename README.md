@@ -90,3 +90,33 @@ Angular is a framework which is used to develop SPA
 2. `header.component.css` - style file
 3. `header.component.ts` - code/logic file
 4. `header.component.spec.ts` - unit test file
+
+https://undraw.co/illustrations
+
+# Web Page Design
+1. Header
+	1. Home
+	2. About
+	3. Todo
+	4. Contact
+2. Content
+	1. dynamic render
+3. Footer
+	1. Copyright
+	2. Socialmedia links
+
+# TODO APP
+1. Controls
+	1. Textbox
+	2. Button
+2. Action
+	On click on button, we need to display textbox value in list down.
+3. Make sure that before going to add the data in list, the dat should not be duplicate
+4. After adding the data in list, need to clear the textbox value
+5. Each line item we have to add edit & delete button
+6. Edit Action
+	1. On click of edit, data will pepopulate in textbox and button name change to update
+	2. We have to display one cancel button and on click on cancel button, we have to display the normal add view
+	3. After click on update, we have to change the value of the list and reset to add view
+7. Delete Action
+	on Click of delete, we need to show the comforim dialog, once user clik on ok/Yed, we will remove the data from the list.

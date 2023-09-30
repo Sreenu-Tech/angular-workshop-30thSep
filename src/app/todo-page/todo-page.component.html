@@ -1,0 +1,31 @@
+<h1>TODO APP</h1>
+<!--
+    Add View
+    in Angulat to fire the event we have to use (<eventName>)
+    (click) is the button click event
+    [(ngModel)]: is used to enable two way databinding the application
+    means here we have attached the _name varibale with textbox, then what will happen if any changes will occer in text box, then the textbox will update in _name varible
+    {{}} : is used to print/bind any varibale/object/property in HTML
+-->
+<div>
+    <input type="text" [(ngModel)]="_name" />
+    <button (click)="handleAdd()">Add</button>
+    {{_name}}
+</div>
+
+<!--
+    List View
+    Directive : is used to manipulate the HTML
+    *ngFor : predefined directive, which is used to loop the data inside HTML
+-->
+<div>
+    <ul>
+        <li *ngFor="let item of _items">
+            <span>{{item}}</span>
+            <div>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+        </li>
+    </ul>
+</div>
