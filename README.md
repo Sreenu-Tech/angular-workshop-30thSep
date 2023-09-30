@@ -1,27 +1,92 @@
-# TodoApp
+UI - User Interface(Screen)
+---------
+Platforms
+---------
+1. Browser
+	- Chorme
+	- Firefox
+	- Edge
+	- Safari
+2. Mobile
+	- Android
+		- Java/Kotlin
+	- IOS
+		- Objective C /Swift
+3. Tablet
+	- - Android
+		- Java/Kotlin
+	- IOS
+		- Objective C /Swift
+4. TV
+	- Android - Java
+	- Webos (LG) 
+	- Firestick (AMazon)
+5. Smart Watch
+	- ANdroid
+	- IOS
+	- 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+Browser
+--------
+Browser is used to access the application from the web(internet)
+- > Web application
+	- HTML - design the web page (image,text,button, textbox etc)
+	- CSS - style the web page
+Static in nature > 
 
-## Development server
+	- Java Script -  programming lang. for the web
+		this is used to dynamically change the HTML & CSS in browser
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+HTML (Hyper Text Markup Language)
+- Hyper - web/internet
+- Text - string format
+- Markup - <>
+- Lang - 
+CSS (casceding Style Sheet)
 
-## Code scaffolding
+Web application
+1. HTML
+2. CSS
+3. JS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Why Angular, React & Vue ?
+--------
+Web Application flow
 
-## Build
+Single Page Application (SPA)
+Angular is a framework which is used to develop SPA
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Setup Angular env.
+	1. Node js - Java Script runtime (https://nodejs.org/en)
+	2. npm -  node package manager  (https://www.npmjs.com/package/@angular/cli)
+	3. Angular CLI - Command Line Interface (https://angular.io/)
+	/> ng version
+	1. ng :  cmd for angular
+2 types of interface to create application
+	1. GUI
+	2. CLI
+2.Create a new Application
+	/> ng new <project name>
+3. Setup Code editor
+	https://code.visualstudio.com/
+4. Run application
+	/> ng serve
+5. Folder & File Structure
 
-## Running unit tests
+6. Component
+	Component is UI building block
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Component
+1. HTML
+2. CSS
+3. JS/TS
+4. spec.ts (unit test case)
+## How to create component?
+`ng g c <component name>`
+`ng generate ccomponent <component name>`
+`ng g c header`
+## file structure in component
+1. `header.component.html` - Design file
+2. `header.component.css` - style file
+3. `header.component.ts` - code/logic file
+4. `header.component.spec.ts` - unit test file
