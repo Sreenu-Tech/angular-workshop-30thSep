@@ -138,3 +138,8 @@ console.log(myAge==yourAge)
 // === it will check value with type
 console.log(myAge===yourAge)
 `
+
+
+## clone this project
+`git clone <path>`
+`npm install`
