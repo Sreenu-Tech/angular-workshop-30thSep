@@ -8,23 +8,34 @@
     {{}} : is used to print/bind any varibale/object/property in HTML
 -->
 <div>
-    <input type="text" [(ngModel)]="_name" />
-    <button (click)="handleAdd()">Add</button>
-    {{_name}}
+    <input type="text" [(ngModel)]="_name" (keyup.enter)="handleAdd()" />
+    <button (click)="handleAdd()">{{_editIndex>-1?'Update':'Add'}}</button>
+    <!--
+        this button will render based on editIndex
+        means we will write if condition for this button
+
+        *ngIf : is used to render/display the element in browser based on expression/condition
+    -->
+    <button *ngIf="_editIndex>-1" (click)="handleCancel()">Cancel</button>
+    <!--This error will display based on logic-->
+    <div style="color: red;">{{_error}}</div>
 </div>
 
 <!--
     List View
     Directive : is used to manipulate the HTML
     *ngFor : predefined directive, which is used to loop the data inside HTML
+    for(int i=0;i<10;i++){}
+    index is the predefined varibale in *ngFor, which will give us the index each item
+    [] = if we want to pass dynamic value in html property then we have to use []
 -->
 <div>
     <ul>
-        <li *ngFor="let item of _items">
-            <span>{{item}}</span>
+        <li *ngFor="let item of _items;let i=index">
+            <span>{{i}} {{item}}</span>
             <div>
-                <button>Edit</button>
-                <button>Delete</button>
+                <button (click)="handleEdit(i)" [disabled]="_editIndex>-1">Edit</button>
+                <button (click)="handleDelete(i)" [disabled]="_editIndex>-1">Delete</button>
             </div>
         </li>
     </ul>

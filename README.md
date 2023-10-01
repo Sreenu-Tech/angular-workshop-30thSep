@@ -120,3 +120,21 @@ https://undraw.co/illustrations
 	3. After click on update, we have to change the value of the list and reset to add view
 7. Delete Action
 	on Click of delete, we need to show the comforim dialog, once user clik on ok/Yed, we will remove the data from the list.
+
+# Java Script
+JS is not a type saftey language.
+`
+let age=20 // type will decide based on the value
+console.log(typeof age)
+age="Abcd"
+console.log(typeof age)
+// int age=20;
+let myAge=20;
+console.log(typeof myAge)
+let yourAge="20"
+console.log(typeof yourAge)
+// == it will check only value
+console.log(myAge==yourAge)
+// === it will check value with type
+console.log(myAge===yourAge)
+`
