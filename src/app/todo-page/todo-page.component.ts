@@ -77,7 +77,7 @@ export class TodoPageComponent {
     // disable all the edit and delete button in list
     this._editIndex = index;
     // change the add button to edit
-
+    
     // display cancel button
     console.log(this._editIndex)
   }

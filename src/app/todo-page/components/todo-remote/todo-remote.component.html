@@ -1,0 +1,12 @@
+<div>
+    <strong *ngIf="_loading">Please wait....</strong>
+    <ul>
+        <li *ngFor="let item of _results;let i=index">
+            <span>{{item.title}}</span>
+            <div>
+                <button >Edit</button>
+                <button>Delete</button>
+            </div>
+        </li>
+    </ul>
+</div>

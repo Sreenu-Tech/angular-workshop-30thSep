@@ -11,6 +11,10 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { TodoPageComponent } from './todo-page/todo-page.component';
 import { FormsModule } from '@angular/forms';
+import { TodoRemoteComponent } from './todo-page/components/todo-remote/todo-remote.component';
+// this is the module requried to enable http work in angular
+import { HttpClientModule } from
+  '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -21,14 +25,25 @@ import { FormsModule } from '@angular/forms';
     HomePageComponent,
     AboutPageComponent,
     ContactPageComponent,
-    TodoPageComponent
+    TodoPageComponent,
+    TodoRemoteComponent
   ],
   imports: [
+    // here we will register the package/module which will use inside the application
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/**
+ * this module is the default module for the application
+ * and this will invoke AppComponent
+ * this module is called inside main.ts
+ * 
+ * main.ts (entry point) > AppModule > AppComponent > other components
+ */
